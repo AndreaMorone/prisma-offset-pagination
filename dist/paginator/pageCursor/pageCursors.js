@@ -26,11 +26,7 @@ async function createPageCursors({ pageInfo: { currentPage, size, buttonNum, tot
     }
     else if (totalPages <= buttonNum) {
         // Collection is short, and `around` includes page 1 and the last page. 1 / 1 2 3 / 7
-<<<<<<< HEAD
-        const around = await cursorArray_1.pageCursorsToArrayNearTheBeginning({
-=======
         const around = await (0, cursorArray_1.pageCursorsToArrayNearTheBeginning)({
->>>>>>> d30d6f5 (fix for type identification)
             start: 1,
             end: totalPages,
             pageInfo,
@@ -44,22 +40,14 @@ async function createPageCursors({ pageInfo: { currentPage, size, buttonNum, tot
     }
     else if (currentPage <= Math.floor(buttonNum / 2) + 1) {
         // We are near the beginning, and `around` will include page 1. 1 / 1 2 3 / 7
-<<<<<<< HEAD
-        const last = await cursorObject_1.pageToCursorObject({
-=======
         const last = await (0, cursorObject_1.pageToCursorObject)({
->>>>>>> d30d6f5 (fix for type identification)
             page: totalPages,
             pageInfo,
             model,
             findManyArgs,
             prisma,
         });
-<<<<<<< HEAD
-        const around = await cursorArray_1.pageCursorsToArrayNearTheBeginning({
-=======
         const around = await (0, cursorArray_1.pageCursorsToArrayNearTheBeginning)({
->>>>>>> d30d6f5 (fix for type identification)
             start: 1,
             end: buttonNum - 1,
             pageInfo,
@@ -74,22 +62,14 @@ async function createPageCursors({ pageInfo: { currentPage, size, buttonNum, tot
     }
     else if (currentPage >= totalPages - Math.floor(buttonNum / 2)) {
         // We are near the end, and `around` will include the last page. 1 / 5 6 7 / 7
-<<<<<<< HEAD
-        const first = await cursorObject_1.pageToCursorObject({
-=======
         const first = await (0, cursorObject_1.pageToCursorObject)({
->>>>>>> d30d6f5 (fix for type identification)
             page: 1,
             pageInfo,
             model,
             findManyArgs,
             prisma,
         });
-<<<<<<< HEAD
-        const around = await cursorArray_1.pageCursorsToArrayNearTheEnd({
-=======
         const around = await (0, cursorArray_1.pageCursorsToArrayNearTheEnd)({
->>>>>>> d30d6f5 (fix for type identification)
             start: totalPages - buttonNum + 2,
             end: totalPages,
             pageInfo,
@@ -104,22 +84,14 @@ async function createPageCursors({ pageInfo: { currentPage, size, buttonNum, tot
     }
     else {
         // We are in the middle, and `around` doesn't include the first or last page. 1 / 4 5 6 / 7
-<<<<<<< HEAD
-        const first = await cursorObject_1.pageToCursorObject({
-=======
         const first = await (0, cursorObject_1.pageToCursorObject)({
->>>>>>> d30d6f5 (fix for type identification)
             page: 1,
             pageInfo,
             model,
             findManyArgs,
             prisma,
         });
-<<<<<<< HEAD
-        const last = await cursorObject_1.pageToCursorObject({
-=======
         const last = await (0, cursorObject_1.pageToCursorObject)({
->>>>>>> d30d6f5 (fix for type identification)
             page: totalPages,
             pageInfo,
             model,
@@ -127,11 +99,7 @@ async function createPageCursors({ pageInfo: { currentPage, size, buttonNum, tot
             prisma,
         });
         const offset = Math.floor((buttonNum - 3) / 2);
-<<<<<<< HEAD
-        const around = await cursorArray_1.pageCursorsToArrayInTheMiddle({
-=======
         const around = await (0, cursorArray_1.pageCursorsToArrayInTheMiddle)({
->>>>>>> d30d6f5 (fix for type identification)
             start: currentPage - offset,
             end: currentPage + offset,
             pageInfo,

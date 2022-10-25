@@ -40,11 +40,7 @@ async function prismaOffsetPagination({ model, cursor, size, buttonNum, orderBy,
     if (cursor) {
         const prismaModel = prisma[model.name.toLowerCase()];
         const decryptedCursor = Buffer.from(cursor, 'base64').toString('ascii').slice(9);
-<<<<<<< HEAD
-        let idOrigin = isNaN(parseInt(decryptedCursor)) ? decryptedCursor : Number(decryptedCursor);
-=======
         let idOrigin = typeof decryptedCursor == "string" ? decryptedCursor : Number(decryptedCursor);
->>>>>>> d30d6f5 (fix for type identification)
         // findManyArgsForCursorCount -> cursorCount -> currentPage
         let findManyArgsForCursorCount;
         if (findManyArgs === null || findManyArgs === void 0 ? void 0 : findManyArgs.orderBy) {
@@ -110,11 +106,7 @@ async function prismaOffsetPagination({ model, cursor, size, buttonNum, orderBy,
         cursor: Buffer.from('saltysalt'.concat(String(result.id))).toString('base64'),
         node: result,
     }));
-<<<<<<< HEAD
-    const pageCursors = await pageCursor_1.createPageCursors({
-=======
     const pageCursors = await (0, pageCursor_1.createPageCursors)({
->>>>>>> d30d6f5 (fix for type identification)
         pageInfo: {
             currentPage,
             size,

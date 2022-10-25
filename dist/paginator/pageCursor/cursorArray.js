@@ -7,11 +7,7 @@ const cursorObject_1 = require("./cursorObject");
 async function pageCursorsToArray({ start, end, pageInfo, model, findManyArgs, prisma, }) {
     const cursors = [];
     for (let page = start; page <= end; page++) {
-<<<<<<< HEAD
-        const cursorResult = await cursorObject_1.pageToCursorObject({
-=======
         const cursorResult = await (0, cursorObject_1.pageToCursorObject)({
->>>>>>> d30d6f5 (fix for type identification)
             page,
             pageInfo,
             model,

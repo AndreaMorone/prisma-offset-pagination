@@ -1,5 +1,1 @@
-<<<<<<< HEAD
-{"version":3,"file":"index.js","sourceRoot":"","sources":["../../src/paginator/index.ts"],"names":[],"mappings":";;;;;;;;;;;;AAAA,6CAA2B"}
-=======
 {"version":3,"file":"index.js","sourceRoot":"","sources":["../../src/paginator/index.ts"],"names":[],"mappings":";;;;;;;;;;;;;;;;AAAA,6CAA2B"}
->>>>>>> d30d6f5 (fix for type identification)

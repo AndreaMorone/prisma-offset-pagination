@@ -1,10 +1,10 @@
 {
-  "name": "@nextools/prisma-offset-pagination",
+  "name": "prisma-pagination-plugin",
   "version": "0.0.5",
-  "description": "prisma-offset-pagination",
+  "description": "prisma-pagination-plugin",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "repository": "git@github.com:AndreaMorone/prisma-offset-pagination.git",
+  "repository": "git@github.com:AndreaMorone/prisma-pagination-plugin.git",
   "author": "Nextools <nextools.tech@gmail.com>",
   "license": "MIT",
   "scripts": {

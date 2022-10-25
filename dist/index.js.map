@@ -1,5 +1,1 @@
-<<<<<<< HEAD
-{"version":3,"file":"index.js","sourceRoot":"","sources":["../src/index.ts"],"names":[],"mappings":";;;;;;;;;;;;AAAA,8CAA4B"}
-=======
 {"version":3,"file":"index.js","sourceRoot":"","sources":["../src/index.ts"],"names":[],"mappings":";;;;;;;;;;;;;;;;AAAA,8CAA4B"}
->>>>>>> d30d6f5 (fix for type identification)
